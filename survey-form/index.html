@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <main>
+        <div class="outer-cover">
+        <header>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Thank You For Taking Your Time To Give Us Feedback</p>
+        </header>
+        <form id="survey-form">
+
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label><br>
+                  <input type="text" name="name" id="name" placeholder="Enter Your Name" required> 
+            </div>
+
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="age" id="age-label">Age</label><br>
+                <input type="number" name="age" id="age" placeholder="Enter Your Age" >
+            </div>
+
+            <div class="form-group">
+                <label for="occupation" class="select-role">Choose A Role That Best Describes You</label><br>
+                <select name="occupation" id="dropdown">
+                <option selected disabled value>Select Your Role</option>
+                <option value="student">Student</option>
+                <option value="full-time-job">Full-Time Job</option>
+                <option value="part-time-job">Part-Time Job</option>
+                <option value="prefer-to-not-say">Prefer Not To Say</option>
+                <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="Rate">Would You Recommend Our Products To A Friend?</label>
+            
+            <div class="Radio-group">
+                <input type="radio" name="Rate"  value="never"><label for="Never">Never</label> 
+            </div>
+
+            <div class="Radio-group">
+                <input type="radio" name="Rate" value="Maybe"><label for="maybe">Maybe</label> 
+            </div>
+
+            <div class="Radio-group">
+                <input type="radio" name="Rate" value="Likely"/><label for="likely">Likely</label>
+            </div>
+
+            <div class="Radio-group">
+                <input type="radio" name="Rate" value="Definitely"><label for="definitely">Definitely</label>
+            </div>
+            </div>
+
+            <div class="checkbox-group"> 
+                <label for="Interest">Select Things That You Liked About Our Product</label>
+
+            <div class="checkbox-group">   
+                <input type="checkbox" name="Interest" id="UI" value="UI"><label for="UI">UI</label>
+            
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" name="Interest" id="Features" value="Features"><label for="features">
+                Features
+        </label>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" name="Interest" id="Service" value="Service"><label for="service">
+                Service
+        </label>
+            </div>
+
+            <div class="checkbox-group">
+               <input type="checkbox" name="interest" id="simpleness" value="simpleness"><label for="simpleness">
+               Simpleness
+               </label>
+            </div>
+            </div>
+
+             <div class="form-group">
+                <label for="Remark" class="Remark">Remarks</label><br>
+                <textarea name="remark" id="remark" placeholder="Tell us how we can improve"></textarea>
+             </div>
+
+             <div class="form-group">
+                <button id="submit" type="submit">Submit</button>
+             </div>
+            </div>
+        </form>
+
+    </div>
+    </main>
+    
+</body>
+</html>
